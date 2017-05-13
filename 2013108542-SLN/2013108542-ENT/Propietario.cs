@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace _2013108542_ENT
 {
-    class Propietario
+    public class Propietario
     {
+        public string DNI { get; set; }
+        public string Nombres { get; set; }
+        public string Apellidos { get; set; }
+        public string LicenciaConducir { get; set; }
+
     }
 }

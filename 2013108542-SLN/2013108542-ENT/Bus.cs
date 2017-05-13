@@ -6,7 +6,21 @@ using System.Threading.Tasks;
 
 namespace _2013108542_ENT
 {
-    class Bus
-    {
+   public class Bus : Carro
+    { 
+        public TipoBus TipoBus { get; set; }
+
+
+        public Bus(Volante volante, Parabrisas parabrisas, int numLlantas,
+                         int numAsientos, Propietario propietario, TipoCarro tipoCarro, TipoBus tipoBus)
+            : base(volante, parabrisas, numLlantas, numAsientos, propietario, tipoCarro)
+        {
+            TipoBus = tipoBus;
+        }
+
+        public Bus()
+        {
+
+        }
     }
 }
