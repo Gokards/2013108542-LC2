@@ -43,23 +43,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Asiento.cs" />
-    <Compile Include="Automovil.cs" />
-    <Compile Include="Bus.cs" />
-    <Compile Include="Carro.cs" />
-    <Compile Include="Cinturon.cs" />
-    <Compile Include="Ensambladora.cs" />
-    <Compile Include="Llanta.cs" />
-    <Compile Include="Parabrisas.cs" />
+    <Compile Include="Entities\Asiento.cs" />
+    <Compile Include="Entities\Automovil.cs" />
+    <Compile Include="Entities\Bus.cs" />
+    <Compile Include="Entities\Carro.cs" />
+    <Compile Include="Entities\Cinturon.cs" />
+    <Compile Include="Entities\Ensambladora.cs" />
+    <Compile Include="Entities\Llanta.cs" />
+    <Compile Include="Entities\Parabrisas.cs" />
+    <Compile Include="IRepositores\IVolanteRepository.cs" />
+    <Compile Include="IRepositores\IAsientoRepository.cs" />
+    <Compile Include="IRepositores\IAutomovilRepository.cs" />
+    <Compile Include="IRepositores\ICarroRepository.cs" />
+    <Compile Include="IRepositores\IBusRepository.cs" />
+    <Compile Include="IRepositores\IUnityOfWork.cs" />
+    <Compile Include="IRepositores\ICinturonRepository.cs" />
+    <Compile Include="IRepositores\IRepository.cs" />
+    <Compile Include="IRepositores\IEnsambladoraRepository.cs" />
+    <Compile Include="IRepositores\ILlantaRepository.cs" />
+    <Compile Include="IRepositores\IPropietarioRepository.cs" />
+    <Compile Include="IRepositores\IParabrisasRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Propietario.cs" />
-    <Compile Include="TipoAuto.cs" />
-    <Compile Include="TipoBus.cs" />
-    <Compile Include="TipoCarro.cs" />
-    <Compile Include="Volante.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
+    <Compile Include="Entities\Propietario.cs" />
+    <Compile Include="Enum\TipoAuto.cs" />
+    <Compile Include="Enum\TipoBus.cs" />
+    <Compile Include="Enum\TipoCarro.cs" />
+    <Compile Include="Entities\Volante.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

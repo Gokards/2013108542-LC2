@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _2013108542_ENT
+namespace _2013108542_PER
 {
-    public enum TipoAuto
+    class Class1
     {
-        Sedan, PickUp, Coupe, HatchBack, NoDefinido
     }
 }

@@ -50,9 +50,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DBContext.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="EnsambladoraDbContext.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositores\AsientoRepository.cs" />
+    <Compile Include="Repositores\AutomovilRepository.cs" />
+    <Compile Include="Repositores\BusRepository.cs" />
+    <Compile Include="Repositores\CarroRepository.cs" />
+    <Compile Include="Repositores\CinturonRepository.cs" />
+    <Compile Include="Repositores\EnsambladoraRepository.cs" />
+    <Compile Include="Repositores\Repository.cs" />
+    <Compile Include="Repositores\UnityOfWork.cs" />
+    <Compile Include="Repositores\ParabrisasRepository.cs" />
+    <Compile Include="Repositores\LlantaRepository.cs" />
+    <Compile Include="Repositores\PropietarioRepository.cs" />
+    <Compile Include="Repositores\VolanteRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -63,6 +76,9 @@
       <Project>{35131ef9-19cf-40c4-b028-01832523cba9}</Project>
       <Name>2013108542-ENT</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="EnityConfigurations\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
